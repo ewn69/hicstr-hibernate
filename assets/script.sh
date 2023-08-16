@@ -8,7 +8,7 @@ do
     do
         if [ -d "$folder" ] && [ ! -f "$folder/plugins/HicstrHibernate.jar" ]
         then
-            cp -v HicstrHibernate.jar "$folder/plugins/"
+            cp -v /var/lib/pterodactyl/volumes/HicstrHibernate.jar "$folder/plugins/"
         fi
     done
 
