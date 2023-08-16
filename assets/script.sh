@@ -1,8 +1,10 @@
 #!/bin/bash
 
+FOLDER="/var/lib/pterodactyl/volumes"
+
 while true
 do
-    for folder in */
+    for folder in "$FOLDER"/*/
     do
         if [ -d "$folder" ] && [ ! -f "$folder/plugins/HicstrHibernate.jar" ]
         then
