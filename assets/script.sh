@@ -6,9 +6,9 @@ while true
 do
     for folder in "$FOLDER"/*/
     do
-        if [ -d "$folder" ] && [ ! -f "$folder/plugins/HicstrHibernate.jar" ]
+        if [ -d "$folder" ] && [ ! -f "$folder/plugins/HibernateX.jar" ]
         then
-            cp -v /var/lib/pterodactyl/volumes/HicstrHibernate.jar "$folder/plugins/"
+            cp -v /var/lib/pterodactyl/volumes/HibernateX.jar "$folder/plugins/"
         fi
     done
 
